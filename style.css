@@ -1,0 +1,71 @@
+main ul li .active {
+    color: #F06C4E !important;
+}
+
+#hungry {
+    border: 3px solid #F06C4E;
+    margin-left: 70px;
+}
+
+.btn {
+    background-color: #F06C4E;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btn:focus,
+.btn-close:focus {
+    background-color: #e78f7b !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn:hover {
+    color: #69372c !important;
+}
+
+input {
+    background-image: url("images/search.png");
+    background-repeat: no-repeat;
+    background-position: 3px 4px;
+    background-size: 38px;
+    padding: 0 40px !important;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #F06C4E !important;
+}
+
+#mealCards div {
+    float: left;
+    margin: 10px 10px;
+}
+
+#mealCards {
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+#mealCards .card:hover {
+    box-shadow: 0 0 2px 2px #F06C4E;
+    cursor: pointer;
+    color: #F06C4E;
+}
+
+#mealCards h5 {
+    text-align: center;
+}
+
+@media screen and (max-width:780px) {
+    #hungry {
+        margin-left: 0px;
+    }
+
+    #form {
+        padding-top: 2rem !important;
+        padding-bottom: 0 !important;
+    }
+}

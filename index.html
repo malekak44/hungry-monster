@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Hungry Monster</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="hungry" src="images/hungry.png" class="rounded float-start"
+            alt="hungry" width="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navber ends here -->
+
+
+    <!-- form starts here -->
+
+    <div id="form" class="container col-md-4 m-auto py-5">
+      <div class="input-group mb-3">
+        <input id="searchVal" class="form-control" placeholder="Search for Meal..." autocomplete="off">
+        <div class="input-group-append">
+          <button type="button" class="btn" id="search_button">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- form end -->
+
+    <!-- data are here -->
+    <div id="mealCards">
+
+    </div>
+    <!--data closed-->
+
+    <!-- modal starts -->
+    <div class="modal fade" id="mealModal" tabindex="-1" aria-labelledby="mealModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="mealModalLabel">Meal's Ingredients</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="mealDetails" class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends -->
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
