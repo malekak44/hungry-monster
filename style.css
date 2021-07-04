@@ -73,4 +73,8 @@ input:focus {
         float: none !important;
         margin: 10px auto !important;
     }
+
+    .card {
+        width: 19rem !important;
+    }
 }
