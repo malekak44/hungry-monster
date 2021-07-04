@@ -77,4 +77,8 @@ input:focus {
     .card {
         width: 19rem !important;
     }
+
+    #form {
+        padding-bottom: 7px !important;
+    }
 }
